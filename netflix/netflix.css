@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    /* images/image1.jpg */
+    background-image: url("./images/image1.jpg");
+    background-position: center;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 600px;
+    width: 100%;
+    opacity: 0.65;
+    background-color: black;
+
+}
+
+nav {
+    padding-top: 20px;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav img {
+    width: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+    width: 90px;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.hero {
+    color: rgb(252, 252, 252);
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero> :first-child {
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.hero> :nth-child(2) {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.line {
+    margin-top: 20px;
+    background-color: rgb(212, 63, 212);
+    height: 3px;
+}
+
+.button1 button {
+    background-color: red;
+    color: white;
+    padding: 15px 38px;
+    font-size: 20px;
+}
+
+.button1>input {
+    background-color: rgb(20, 20, 20);
+    opacity: 0.7;
+    color: white;
+    font-size: 15px;
+    padding: 17px 65px;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+
+
+
+}
+
+.first {
+    max-width: 100%;
+    margin: auto;
+}
+
+.first h2 {
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+.image {
+    display: flex;
+    max-width: 80%;
+    gap: 30px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+
+}
+
+.image a img {
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.image a img:hover {
+    transform: scale(1.1);
+}
+
+.second {
+    /* height: 100%; */
+    /* margin-left:70px; */
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.second h2 {
+    color: white;
+    padding: 40px;
+
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    /* margin-left: 90px; */
+}
+
+.box1 {
+    opacity: 0.8;
+    /* background-color: #20111f; */
+    background: linear-gradient(to right, #767080, #4e1717, #2a1c3f);
+
+
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    width: 320px;
+
+    padding: 5px;
+
+}
+
+.content1 h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content1 p {
+    text-align: center;
+    color: white;
+}
+
+.box2 {
+    opacity: 0.8;
+    /* background-color: #20111f; */
+    background: linear-gradient(to right, #767080, #4e1717, #2a1c3f);
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    width: 320px;
+
+
+    padding: 5px;
+}
+
+.content2 h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content2 p {
+
+    text-align: center;
+    color: white;
+}
+
+.box3 {
+    opacity: 0.8;
+    /* background-color: #20111f; */
+    background: linear-gradient(to right, #767080, #4e1717, #2a1c3f);
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    width: 320px;
+
+    padding: 5px;
+}
+
+.content3 h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content3 p {
+    text-align: center;
+    color: white;
+}
+
+.box4 {
+    opacity: 0.8;
+    /* background-color: #20111f; */
+    background: linear-gradient(to right, #767080, #4e1717, #2a1c3f);
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    width: 320px;
+
+    padding: 5px;
+}
+
+.content4 h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content4 p {
+    text-align: center;
+    color: white;
+}
+
+.faqed {
+    color: white;
+    padding: 88px;
+}
+
+.faqed h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.faq-box1 {
+
+    background-color: #2d2d2d;
+    /* padding: 30px; */
+    width: 87%;
+    margin: auto;
+    margin-top: 9px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    transition-duration: 250ms;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    border-top: none;
+
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: 0.3s ease;
+}
+
+.faq-box1.active .answer {
+    max-height: 500px;
+    padding: 20px 20px;
+    /* padding-bottom: 20px; */
+}
+
+.faq-box1 svg {
+    transition: transform 0.3s;
+}
+
+.faq-box1.active svg {
+    transform: rotate(45deg);
+}
+
+.faq-box1:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.faq-box1 svg {
+    filter: invert(1);
+}
+
+.para p {
+    padding: 10px;
+    text-align: center;
+}
+
+.buttonfaq {
+    padding-top: 80px;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.buttonfaq button {
+    background-color: red;
+    color: white;
+    padding: 15px 38px;
+    font-size: 20px;
+}
+
+.buttonfaq>input {
+    background-color: rgb(20, 20, 20);
+    opacity: 0.7;
+    color: white;
+    font-size: 15px;
+    padding: 17px 65px;
+    width: 50%;
+}
+
+.link {
+    padding: 36px 0;
+}
+
+.link a {
+    opacity: 0.66;
+    color: white;
+    margin-left: 90px;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.item {
+    opacity: 0.66;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+    margin: auto;
+    gap: 20px;
+}
+
+.item a {
+    color: white;
+}
+
+.lastfooter {
+    color: white;
+    opacity: 0.66;
+    padding: 60px;
+    margin-left: 40px;
+}
+
+.lastfooter p {
+    padding: 25px;
+
+}
+
+.lastfooter form {
+    margin-left: 20px;
+}
+
+.lastfooter select {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 150px;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .main .box {
+        height: 100%;
+    }
+
+    nav {
+        max-width: 90%;
+        height: auto;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .hero {
+        padding: 233px 64px;
+        margin-top: -8px;
+        height: auto;
+
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero span {
+        font-size: 16px;
+    }
+
+    .button1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .button1 input {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .button1 button {
+        width: 100%;
+    }
+
+    /* Trending images */
+    .image {
+        max-width: 95%;
+        gap: 15px;
+    }
+
+    .image a img {
+        width: 140px;
+        height: 220px;
+    }
+
+    /* Reason boxes */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second{
+       max-width: 100%;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 100%;
+        padding: 37px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* FAQ */
+    .faqed {
+        padding: 30px 15px;
+    }
+
+    .faq-box1 {
+        width: 100%;
+    }
+
+    .question {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .last {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .link a {
+        margin-left: 20px;
+    }
+
+    .lastfooter {
+        margin-left: 0;
+        padding: 30px 15px;
+    }
+
+    .buttonfaq {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .buttonfaq input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+/* 2nd media query  */
+@media (max-width: 900px) {
+
+    nav {
+        max-width: 85%;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 36px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 45%;
+    }
+
+    .faq-box1 {
+        width: 95%;
+    }
+
+    .last {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+}
+
+/* 3 media query  */
+@media (max-width: 1200px) {
+
+    nav {
+        max-width: 85%;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .faq-box1 {
+        width: 95%;
+    }
+
+}

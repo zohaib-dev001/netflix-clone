@@ -118,20 +118,22 @@ section {
     gap: 30px;
     margin: auto;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible;
     scrollbar-width: none;
-
 }
 
 .image a img {
+    display: block;
     height: 300px;
     width: 200px;
     border-radius: 8px;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
 
 .image a img:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
+
 }
 
 .second {

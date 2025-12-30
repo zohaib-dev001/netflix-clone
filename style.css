@@ -120,12 +120,14 @@ section {
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
+
 }
 
 .image a img {
     height: 300px;
     width: 200px;
     border-radius: 8px;
+     transition: transform 0.3s ease;
 }
 
 .image a img:hover {
